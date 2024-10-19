@@ -1,4 +1,4 @@
-object Tuple {
+object tuple {
   def main(args:Array[String]):Unit= {
     var tup=(10,20,10.5,true)
     println(tup._2)
