@@ -12,6 +12,8 @@ object firstscalaspark {
     val rdd3 = rdd2.reduceByKey((x, y) => (x + y))
     rdd3.collect().foreach(println)
 
+    //scala.io.StdIn.readLine()
+
   }
 
 }
