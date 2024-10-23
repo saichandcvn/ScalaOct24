@@ -1,4 +1,4 @@
-object arr_foreach {
+object arrforeach {
   def main(args:Array[String]):Unit= {
 
     println("Printing Using ForEach Loop:")
