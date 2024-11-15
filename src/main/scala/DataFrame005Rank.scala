@@ -1,10 +1,13 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
+import org.apache.log4j.{Level, LogManager, Logger}
 
 object DataFrame005Rank {
 
   def main(args:Array[String]):Unit= {
+
+    val logger: Logger = Logger.getLogger(this.getClass)
 
     val spark = SparkSession.builder()
       .appName("scala-spark-program")
@@ -12,7 +15,6 @@ object DataFrame005Rank {
       .getOrCreate()
 
     import spark.implicits._
-
 
     val storeSalesData = Seq(
       ("Karthik", "Store_A", "2023-03", 1500),
